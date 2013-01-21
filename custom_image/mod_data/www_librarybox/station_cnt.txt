@@ -1,0 +1,1 @@
+<a title='Counter is refreshed every 2 minutes, you need to refresh the page'>Currently there are 0 connected clients</a>
