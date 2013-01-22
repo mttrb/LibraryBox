@@ -32,3 +32,8 @@ assets/.DS_Store*
 ehthumbs.db
 Icon?
 Thumbs.db
+
+# Stuff created during make processing #
+#######################################
+custom_image/mod_image
+custom_image/mod_data/version_tag_mod
