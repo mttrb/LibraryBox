@@ -52,7 +52,7 @@ $(MOD_IMAGE_TGZ): $(MOD_FOLDER) $(MOUNT_POINT) $(MOD_IMAGE) $(MOD_VERSION_TAG)
 	echo "#### Copy Modifications to image file"
 	sudo   cp -vr $(MOD_SRC_FOLDER)/*   $(MOUNT_POINT)
 # Example Exchanging stock lines
-	sed 's:HOST="piratebox.lan":HOST="librarybox.lan":'  -i  $(MOUNT_POINT)/conf/piratebox.conf
+	sudo sed 's:HOST="piratebox.lan":HOST="librarybox.lan":'  -i  $(MOUNT_POINT)/conf/piratebox.conf
 	sudo sed 's:DROOPY_ENABLED="yes":DROOPY_ENABLED="no":'  -i  $(MOUNT_POINT)/conf/piratebox.conf
 	sudo mv $(MOUNT_POINT)/www  $(MOUNT_POINT)/www_old
 	sudo mv $(MOUNT_POINT)/www_librarybox  $(MOUNT_POINT)/www
