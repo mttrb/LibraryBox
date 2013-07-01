@@ -22,6 +22,8 @@ cp $path/READ.ME.htm /opt/piratebox/share/;
 cp $path/network /etc/config/;
 mv /opt/piratebox/share/READ.ME.htm /opt/piratebox/share/.READ.ME.htm;
 export LD_LIBRARY_PATH=/lib:/usr/lib:/usr/local/lib
-python /mnt/usb/librarybox/alter_SSID.py
+
+# Customize the SSID for LibraryBox
+sed -i '_old' 's/PirateBox - Share Freely/LibraryBox - Free Content!/' /etc/config/wireless
 
 echo "Done! Enjoy your LibraryBox!"
